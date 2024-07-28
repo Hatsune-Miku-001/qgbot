@@ -11,20 +11,10 @@
 /**
  * 这个是示例插件
  *
- * 作者: NKXingXh
- * 邮箱: nkxingxh@nkxingxh.top
- * Github: https://github.com/nkxingxh
+ * 作者: smikuy
+ * 邮箱: smikuy@lucloud.top
+ * Github: https://github.com/Hatsune-Miku-001
  *
- * 通过 pluginRegister 函数注册一个插件类 (Class)
- * 被注册的 类 (Class) 可以是 匿名类、普通类 (建议一般插件使用匿名类, 避免插件间的类名发生冲突; 对于充当 依赖或库 的插件, 则使用普通类, 以便其他插件调用)
- *
- * 如果你打算将开发的插件提交到插件中心 (即 MiraiEz Plugins Doge Manager 的插件仓库)
- * 那么建议做到以下几点:
- * 1. 在插件开头写一点注释，在注释中 注明 插件开发者的联系方式 (例如 邮箱 [推荐]、QQ、微信等) 以及 Github 账号。
- *    这将有助于后续发布插件更新时的身份验证
- * 2. 同一个开发者的插件, 包名开头应该一致 (例如: com.example.plugin1, com.example.plugin2, ...)
- * 3. 插件版本请使用 「PHP 规范化」的版本数字字符串 (例如: 1.0.0, 1.0.1, 1.0.2, ...) (请参阅: https://www.php.net/manual/zh/function.version-compare.php)
- * 4. 请务必仔细阅读这个示例插件的说明, 并对本框架的核心函数有一定的了解 (请查看 core.php、easyMirai.php、pluginsHelp.php 等文件)
  */
 pluginRegister(new class extends pluginParent   //建议继承 pluginParent 插件类,当框架更新导致插件类定义发生变化时, pluginParent 将能提供一定的容错能力
 {
